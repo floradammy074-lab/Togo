@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c12c8">
+<title>Banking App</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="app">
+  <div class="top">
+    <div class="row">
+      <div class="user"><div class="av-lg" id="me"></div><div class="hi"><small>Good Morning!</small><b>Kumar suraj</b></div></div>
+      <div class="row">
+        <button class="circ" aria-label="Search"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" ><circle cx="10.5" cy="10.5" r="4.6" opacity=".35"/><path fill-rule="evenodd" d="M10.5 2.5a8 8 0 100 16 8 8 0 000-16zm0 3.4a4.6 4.6 0 110 9.2 4.6 4.6 0 010-9.2z"/><path d="M16.6 16.6l3.9 3.9" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></svg></button>
+        <button class="circ has-dot" aria-label="Notifications"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" ><g class="bell"><path d="M12 2.8a6.2 6.2 0 00-6.2 6.2v3.2c0 .8-.3 1.6-.9 2.2l-.6.7a1.8 1.8 0 001.4 2.9h12.6a1.8 1.8 0 001.4-2.9l-.6-.7c-.6-.6-.9-1.4-.9-2.2V9A6.2 6.2 0 0012 2.8z"/><path d="M9.5 19.8h5a2.5 2.5 0 01-5 0z"/></g></svg></button>
+      </div>
+    </div>
+    <div class="bal-l">Total Balance</div>
+    <div class="row"><div class="bal">$56,989.30</div>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><path fill-rule="evenodd" d="M12 5c5 0 8.6 3.8 9.7 6.2a1.6 1.6 0 010 1.6C20.6 15.2 17 19 12 19S3.4 15.2 2.3 12.8a1.6 1.6 0 010-1.6C3.4 8.8 7 5 12 5zm0 3.6a3.4 3.4 0 100 6.8 3.4 3.4 0 000-6.8zm0 2a1.4 1.4 0 100 2.8 1.4 1.4 0 000-2.8z"/></svg></div>
+    <div class="acct">**** **** 2345
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><rect x="3" y="3" width="12" height="12" rx="3.5" opacity=".55"/><rect x="9" y="9" width="12" height="12" rx="3.5"/></svg></div>
+    <div class="btns">
+      <button class="pill w"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" ><rect x="10" y="4" width="4" height="16" rx="2"/><rect x="4" y="10" width="16" height="4" rx="2"/></svg> Deposit</button>
+      <button id="tbtn" class="pill d"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" ><g stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20.5 3.5L4.6 9.6l5.8 3.9z"/><path d="M20.5 3.5l-6.2 15.8-3.9-5.8z" opacity=".6"/></g></svg> Transfer</button>
+      <button class="grid" aria-label="More"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" ><rect x="4" y="4" width="7" height="7" rx="2.5"/><rect x="13" y="4" width="7" height="7" rx="2.5" opacity=".55"/><rect x="4" y="13" width="7" height="7" rx="2.5" opacity=".55"/><rect x="13" y="13" width="7" height="7" rx="2.5"/></svg></button>
+    </div>
+    <div class="handle"></div>
+  </div>
+
+  <div class="sheet">
+    <div class="contacts sv">
+      <div class="h"><b>Savings</b><a href="#" class="pill-btn">Add Money</a></div>
+      <div class="sv-row">
+        <div class="sv-amt"><span>Saved so far</span><b>$12,480.00</b></div>
+        <div class="sv-chg">+2.4%</div>
+      </div>
+      <div class="sv-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" aria-label="Savings goal progress"><i style="width:62%"></i></div>
+      <div class="sv-meta"><span>62% of goal</span><span>$20,000.00</span></div>
+    </div>
+    <div class="h tx-h"><b>Transactions</b><a href="#">See all &nbsp;›</a></div>
+    <div class="day">Today</div>
+    <div class="tx"><div class="logo" style="background:#fff;border:1px solid #eee"><svg width="32" height="22" viewBox="0 0 32 22"><text x="1" y="17" font-family="Arial Black,Arial" font-weight="900" font-size="18" fill="#111">u</text><text x="15" y="17" font-family="Arial Black,Arial" font-weight="900" font-size="18" fill="#14a800">p</text></svg></div>
+      <div class="m"><b>Upwork</b><span>Client Payment Received</span></div><div class="r"><b class="g">+$8,000.00</b><span>July-4 10:50 AM</span></div></div>
+    <div class="tx"><div class="logo" style="background:#111"><svg width="22" height="30" viewBox="0 0 22 30"><path d="M1 0h6l8 20V0h6v30h-6L7 10v20H1z" fill="#e50914"/></svg></div>
+      <div class="m"><b>Netflix</b><span>Subscription Renewal</span></div><div class="r"><b class="rd">-$7,899.00</b><span>July-5 10:50 AM</span></div></div>
+    <div class="tx"><div class="logo" style="background:#00704a;border-radius:50%"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="15" fill="none" stroke="#fff" stroke-width="1.5"/><circle cx="17" cy="17" r="8" fill="#fff"/><circle cx="17" cy="17" r="5" fill="#00704a"/></svg></div>
+      <div class="m"><b>Starbucks</b><span>Morning Coffee</span></div><div class="r"><b class="rd">-$98.00</b><span>July-10 10:50 AM</span></div></div>
+    <div class="day" style="margin-top:4px">Yesterday</div>
+  </div>
+
+  <nav><span class="blob"></span>
+    <div class="active"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" ><path fill-rule="evenodd" d="M10.6 3.3a2.4 2.4 0 012.8 0l6 4.4a3.2 3.2 0 011.6 2.6V17a4 4 0 01-4 4H7a4 4 0 01-4-4v-6.7a3.2 3.2 0 011.6-2.6zM9.5 18.5v-2a2.5 2.5 0 015 0v2a1 1 0 01-1 1h-3a1 1 0 01-1-1z"/></svg>Home</div>
+    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" ><rect x="5" y="3" width="13" height="7" rx="2.5" opacity=".4"/><path fill-rule="evenodd" d="M7.5 6h9A4.5 4.5 0 0121 10.5v5a4.5 4.5 0 01-4.5 4.5h-9A4.5 4.5 0 013 15.5v-5A4.5 4.5 0 017.5 6zM17 12.2a1.8 1.8 0 100 3.6 1.8 1.8 0 000-3.6z"/></svg>Wallet</div>
+    <div class="sp"></div>
+    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" ><path d="M11 5A8 8 0 1019 13H12.6a1.6 1.6 0 01-1.6-1.6z"/><path d="M13 3a8 8 0 018 8h-6.4A1.6 1.6 0 0113 9.4z" opacity=".55"/></svg>Analytics</div>
+    <div><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" ><mask id="gm"><rect width="24" height="24" fill="#fff"/><circle cx="12" cy="12" r="3" fill="#000"/></mask><g mask="url(#gm)"><circle cx="12" cy="12" r="7"/><rect x="9.7" y="2" width="4.6" height="20" rx="2"/><rect x="9.7" y="2" width="4.6" height="20" rx="2" transform="rotate(60 12 12)"/><rect x="9.7" y="2" width="4.6" height="20" rx="2" transform="rotate(120 12 12)"/></g></svg>Settings</div>
+    <div class="fab"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" ><g><path d="M4 8V6.5A2.5 2.5 0 016.5 4H8a1 1 0 010 2H6.5a.5.5 0 00-.5.5V8a1 1 0 01-2 0z"/><g transform="rotate(90 12 12)"><path d="M4 8V6.5A2.5 2.5 0 016.5 4H8a1 1 0 010 2H6.5a.5.5 0 00-.5.5V8a1 1 0 01-2 0z"/></g><g transform="rotate(180 12 12)"><path d="M4 8V6.5A2.5 2.5 0 016.5 4H8a1 1 0 010 2H6.5a.5.5 0 00-.5.5V8a1 1 0 01-2 0z"/></g><g transform="rotate(270 12 12)"><path d="M4 8V6.5A2.5 2.5 0 016.5 4H8a1 1 0 010 2H6.5a.5.5 0 00-.5.5V8a1 1 0 01-2 0z"/></g></g><rect x="8" y="9" width="8" height="6" rx="2"/></svg></div>
+  </nav>
+
+  <section class="scr" id="tscr" aria-label="Transfer">
+    <div class="sh"><button class="bk" id="tback" aria-label="Back"><svg width="20" height="20" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button><b>Transfer</b><span></span></div>
+    <div class="avail">Available balance <b id="avail"></b></div>
+    <div class="fld amt"><label for="amt">Amount</label><div class="ar"><span>$</span><input id="amt" inputmode="decimal" placeholder="0.00" autocomplete="off"></div></div>
+    <div class="fld"><label for="bank">Bank</label><select id="bank"><option value="" disabled selected>Select bank</option><option>Chase Bank</option></select></div>
+    <div class="fld"><label for="acn">Account number</label><input id="acn" inputmode="numeric" maxlength="10" placeholder="10-digit account number" autocomplete="off"></div>
+    <div class="fld"><label for="acname">Account name</label><input id="acname" placeholder="Name on the account" autocomplete="off"></div>
+    <div class="err" id="terr"></div>
+    <button class="send" id="send" disabled>Send money</button>
+  </section>
+  <section class="scr proc" id="pscr" aria-live="polite">
+    <div class="st" id="pend">
+      <div class="flight"><svg viewBox="0 0 260 100"><path class="trl" d="M6 78 C 70 78, 84 22, 136 40 S 210 70, 254 18"/></svg><div class="plane"><svg viewBox="0 0 26 24"><path d="M25 12L2 2l5 10-5 10z" fill="#fff"/><path d="M7 12h18L2 22z" fill="#c4cdff"/></svg></div></div>
+      <div class="pamt" id="pamt"></div>
+      <div class="pmsg" id="pmsg">Securing connection</div>
+      <div class="dcard"><div><span>To</span><b id="pdn"></b></div><div><span>Bank</span><b id="pdb"></b></div><div><span>Account</span><b id="pda"></b></div></div>
+    </div>
+    <div class="st ok" id="done">
+      <div class="seal">
+        <i class="shock"></i>
+        <svg viewBox="0 0 120 120"><circle class="sr" cx="60" cy="60" r="56"/><path class="ck" d="M32 60L44 72Q52 80 58 72L90 38"/></svg>
+        <div class="plane"><svg viewBox="0 0 26 24"><path d="M25 12L2 2l5 10-5 10z" fill="#fff"/><path d="M7 12h18L2 22z" fill="#c4cdff"/></svg></div>
+      </div>
+      <div class="dt rise" style="--dl:1.55s">Transfer successful</div>
+      <div class="pamt rise" id="damt" style="--dl:1.65s"></div>
+      <div class="dcard rise" style="--dl:1.8s"><div><span>To</span><b id="dn"></b></div><div><span>Bank</span><b id="db"></b></div><div><span>Account</span><b id="da"></b></div><div><span>Reference</span><b id="dr"></b></div></div>
+      <button class="send rise" id="dbtn" style="--dl:1.95s">Done</button>
+    </div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body></html>
